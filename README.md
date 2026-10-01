@@ -4,7 +4,14 @@ A small, free website for everyday adventures and life upkeep, with a weekly bin
 ## Use it
 Download the repository and open index.html in a modern browser. No installation, build step, account, API key, or network request is required.
 
-For a public website, open this repository's Settings → Pages. Under Build and deployment choose Deploy from a branch, then main and / (root), and save. GitHub will display the published URL after deployment. Committing files alone does not enable Pages.
+## Publish with GitHub Pages
+The workflow in .github/workflows/pages.yml publishes index.html using GitHub's official Pages actions. It runs when the website or workflow changes on main, and can also be started manually.
+
+For one-time setup, open [Settings → Pages](https://github.com/charan333777/project-101/settings/pages) and select GitHub Actions as the Source under Build and deployment. The workflow also attempts automatic Pages enablement if its GitHub token permits it.
+
+Open [Actions → Publish Side Quest](https://github.com/charan333777/project-101/actions/workflows/pages.yml) to start or retry publication. A successful deployment displays the live URL: https://charan333777.github.io/project-101/. The URL is only live after Pages has been enabled and the deployment succeeds.
+
+If a run fails before any steps execute, open its summary and inspect GitHub's annotations. Resolve any account, Actions, or environment restriction GitHub reports before rerunning. If Configure GitHub Pages fails with a permission error, enable Pages in Settings as described above. No personal access token is required for normal deployment.
 
 ## Features
 - 24 curated quests: adventure and life upkeep.
